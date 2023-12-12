@@ -1,0 +1,54 @@
+/* Author: BAANI */
+/* Date: 11-12-2023 */
+/* Hobbies and Interest css */
+* {
+    margin: 10px;
+    padding: 0;
+}
+
+body {
+    background: white;
+}
+
+h2 {
+
+    color: rgb(29, 69, 103);
+}
+
+img {
+
+    margin-left: 35%;
+    margin-top: 30px;
+    ;
+    width: 30vw;
+    height: 30vh;
+
+}
+
+button {
+    align-content: center;
+    background-color: #9fc0a0;
+    border: 1px;
+    border-style: double;
+    color: rgb(29, 69, 103);
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    margin: 35px 250px;
+    cursor: pointer;
+}
+#gliderbtn{
+  display: inline-flex;
+  
+}
+
+#glider{
+    border: 2px rgb(29, 69, 103) solid; 
+}
+#hobbies{
+    margin-left: 35vw;
+}
+

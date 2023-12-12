@@ -1,0 +1,121 @@
+<!-- Author: BAANI  -->
+<!-- Date: 11-12-2023 -->
+<!-- Hobbies and Interest page -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hobbies and Interest</title>
+        <link rel="stylesheet" href="finalhobbies.css">
+    </head>
+
+    <body>
+    
+        <h2 align="center">Why are hobbies important to me? </h2>
+        <p align="center">My hobbies are vital to my wellbeing because they give me a break from my daily routine, encourage creativity,
+            and provide me with happiness and relaxation. My life becomes more meaningful and fulfilled when I partake in
+            the things I love to do. It also lessens stress and fosters a sense of accomplishment.
+        </p>
+        <div class="intrests">
+            So , In this section , i would like to describe my hobbies and interests. <br>
+            To make it more interesting for you, i have mentioned three hobbies of mine , that are<br>
+            <ul>
+                <li>Travelling</li>
+                <li>Sports - Badminton</li>
+                <li>Photography</li>
+            </ul>
+            You can enter your favourite out of these and get to know my opinion on that . <br>
+            Please enter the initials (in capital) in the provided space.<br>
+            For Example: S for sports.
+            <!-- Image glider -->
+            <div id="glider">
+    
+                <img src="hobby1.jpg" id="img1" />
+                <img src="hobby2.jpg" id="img2" />
+                <img src="hobby3.jpeg" id="img3" />
+                <img src="hobby5.jpg" id="img4" />
+                <div id="gliderbtn">
+                <button id="Forward" onclick="forward()">Next</button>
+                <button id="Previous" onclick="previous()">Previous</button>
+            </div>
+            <!-- input for hobbies -->
+            <input type="text" id="hobbies" oninput="checkInput()">
+            <p id="hobbycontent"></p>
+        </div> 
+        <!-- Java script was not working externally. For this function to operate, i need to put it here. -->
+        <!-- Author: BAANI -->
+        <!--  Date: 11-12-2023 -->
+        <!--  Final hobbies js -->
+        <script>
+        document.getElementById("img1").style.display = 'block';
+        document.getElementById("img2").style.display = 'none';
+        document.getElementById("img3").style.display = 'none';
+        document.getElementById("img4").style.display = 'none';
+        // next button
+        function forward() {
+            let image1 = document.getElementById("img1");
+            let image2 = document.getElementById("img2");
+            let image3 = document.getElementById("img3");
+            let image4 = document.getElementById("img4");
+
+            if (getComputedStyle(image1).display === 'block') {
+                image1.style.display = 'none';
+                image2.style.display = 'block';
+            } else if (getComputedStyle(image2).display === 'block') {
+                image2.style.display = 'none';
+                image3.style.display = 'block';
+            } else if (getComputedStyle(image3).display === 'block') {
+                image3.style.display = 'none';
+                image4.style.display = 'block';
+            } else if (getComputedStyle(image4).display === 'block') {
+                image4.style.display = 'none';
+                image1.style.display = 'block';
+            }
+        }
+        // previous button
+        function previous() {
+            let image1 = document.getElementById("img1");
+            let image2 = document.getElementById("img2");
+            let image3 = document.getElementById("img3");
+            let image4 = document.getElementById("img4");
+
+            if (getComputedStyle(image1).display === 'block') {
+                image1.style.display = 'none';
+                image4.style.display = 'block';
+            } else if (getComputedStyle(image2).display === 'block') {
+                image2.style.display = 'none';
+                image1.style.display = 'block';
+            } else if (getComputedStyle(image3).display === 'block') {
+                image3.style.display = 'none';
+                image2.style.display = 'block';
+            } else if (getComputedStyle(image4).display === 'block') {
+                image4.style.display = 'none';
+                image3.style.display = 'block';
+            }
+        }
+        // input for hobbies
+        function checkInput() {
+            var inputElement = document.getElementById('hobbies');
+            var hiElement = document.getElementById('hobbycontent');
+            // content of hobbies input
+            if (inputElement.value === "T") {
+                hiElement.innerHTML = "Travel takes us out of our comfort zones and inspires us to see, taste and try new things. It constantly challenges us, not only to adapt to and explore new surroundings, but also to engage with different people, to embrace adventures as they come and to share new and meaningful experiences with friends and loved ones. My passport to a colorful tapestry of experiences that inspires me to explore new places and push me beyond my comfort zone is travel. My journey becomes interacting with people from different cultures, welcoming adventures, and cherishing special times. Every journey is a learning experience that pushes, inspires, and transforms me. Traveling opens my eyes to the world's wonders and cultivates a deep appreciation for beauty that transcends ordinary limits. By traveling, I find a symphony that is in tune with humankind's pulse and captivates me with the excitement of unfamiliar locations and varied cultures.";
+            } else if (inputElement.value === "S") {
+                hiElement.innerHTML = "For me, badminton is the beat of my life—it's my favorite pastime and my career. Playing badminton is a symphony of passion and accuracy—from the satisfying  of the shuttlecock against the strings to the quick movements across the court. It goes beyond simple recreation as my favorite sport; it's an exciting journey that I've embraced professionally. I use the shuttlecock as an artistic tool and the court as my canvas while I play aggressive rallies and calculated plays. Professional badminton demands a lot of discipline, which has improved my physical skills and given me a greater appreciation for strategy, perseverance, and focus. The court is in motion whether players are playing fast singles or exciting doubles. I find comfort, challenge, and the thrill of pushing my boundaries in the pursuit of excellence on the court, whether it is in the fast-paced singles match or the exciting doubles play. I've found that badminton is more than just a sport; it's a passion that will last a lifetime and mold my personality and competitive nature.";
+            } else if (inputElement.value === "P") {
+                hiElement.innerHTML = "Photography freezes time to capture emotions and reveal beauty in fleeting moments. It is an immersive experience that goes beyond image capture. Using the camera as a medium, I convey a distinct viewpoint. It captures essence in classic frames, transforming the banal into visual poetry. As a kind of emotional travel document, every picture tells a story of happiness, grief, love, and resiliency. The photographer and subject perform a complex dance that captures both the subject's inner beauty and exterior beauty with a single click of the shutter. Technical complexities, such as mastery of composition and light manipulation, stimulate an intellectual quest for advancement, strengthening abilities and elevating appreciation for art. My passion for photography essentially honors life's kaleidoscope—a visual symphony that harmonizes the commonplace and the extraordinary, the mundane and the magical, providing comfort, inspiration, and a platform for exchanging distinctive viewpoints. Photography is more than just a pastime; it's a never-ending journey of creativity, introspection, and appreciation for the endless beauty that surrounds us.";
+            }
+            else if (inputElement.value === "") {
+                hiElement.innerHTML = " ";
+            }
+            else {
+                hiElement.innerHTML = "invalid input";
+            }
+        }
+        </script>
+    </body>
+
+</html>

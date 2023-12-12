@@ -1,0 +1,128 @@
+/* Author: BAANI */
+/* Date: 11-12-23 */
+/* Cover page css */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('blackbg.jpeg');
+    background-size: cover;
+    color: rgb(247, 243, 243);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(77, 70, 70);
+    color: white;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(251, 248, 248);
+}
+
+nav ul li a:hover {
+    color: rgb(153, 153, 203);
+    font-size: 1.06rem;
+}
+
+.left {
+    font-size: 1.3rem;
+}
+
+.fisrtsection {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 0;
+}
+
+.rightsection img {
+
+    width: 200px;
+    margin: 20px;
+    margin-left: 900px;
+    margin-top: -200px;
+
+
+
+}
+
+.leftsection {
+    font-size: 2rem;
+    margin: 80px;
+    display: inline-block;
+
+}
+
+.textpurple {
+    color: rgb(189, 154, 223);
+}
+
+.textgray {
+    color: rgb(248, 245, 245);
+}
+
+.secondsection {
+    margin: auto;
+    max-width: 85vw;
+    font-size: small;
+    height: 100vh;
+}
+
+.secondsection h2 {
+    font-size: 1.5rem;
+}
+
+.rectangle {
+    background: rgb(245, 244, 244);
+    margin: 30px 0;
+    width: 80vw;
+    height: 1.5px;
+    font-size: large;
+
+}
+
+.verticleline {
+    height: 50px;
+    width: 1px;
+    background-color: rgb(253, 250, 250);
+}
+
+.footer {
+    text-align: center;
+    background-color: rgb(77, 70, 70);
+    color: white;
+    height: 300px;
+    margin: 30px 0px;
+    justify-content: space-around;
+
+}
+
+.footerfirst ul {
+    list-style: none;
+    color: white;
+}
+
+footer .bottom {
+    text-align: center;
+}

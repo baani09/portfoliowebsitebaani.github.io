@@ -1,0 +1,38 @@
+/* Author: BAANI */
+/* Date: 11-12-2023 */
+/* Resume css */
+
+*{
+    margin:5px;
+    padding:0;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 10px;
+}
+
+header {
+    text-align: center;
+    background-color: #524fa1;
+    color: #fff;
+    padding: 30px;
+    margin-bottom: 5px;
+}
+section {
+    margin-bottom: 20px;
+}
+h2 {
+    color: #333;
+}
+li {
+    margin-bottom: 5px;
+}
+.education,
+.experience {
+    margin-bottom: 20px;
+}
+.education h3,
+.experience h3 {
+    color: #524fa1;
+}

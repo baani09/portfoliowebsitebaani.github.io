@@ -1,0 +1,80 @@
+<!-- Author: BAANI -->
+<!-- Date: 08-12-2023 -->
+<!-- FINAL PROJECT TECH1101 WEB AND INTERNET FUNDAMENTALS -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Baani - Personal Website</title>
+        <link rel="stylesheet" href="stylefinal.css">
+    </head>
+    <body background="blackbg.jpeg">
+
+        <header>
+            <nav>
+                <div class="left">Baani's Personal Website</div>
+                <div class="right">
+                    <ul>
+                        <!-- link all other web-pages. -->
+                        <li><a href="htmlcheatsheet.html">HTML Cheatsheet</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="finalhobbies.html">Hobbies and Interests</a></li>
+                        <li><a href="contactme.html">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="firstsection">
+            <div class="leftsection">
+                Heyy!! My Name is <span class="textpurple">Baani</span>
+                <div>Welcome to my website</div>
+                <!-- for text animation  -->
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="image1.jpg">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <!-- Opening Introduction -->
+            <span class="textgray">In this section you will get to know</span>
+            <h2>Who is BAANI !!</h2>
+            <div class="rectangle">
+                <div class="verticleline"></div>
+                Hey! My name is Baani,
+                I'm an individual with a multifaceted personality and a diverse set of interests. A perpetual learner, I
+                thrive on acquiring new knowledge and skills. Whether immersed in the realms of technology, arts, or
+                sciences, I find joy in exploring the intersections of different disciplines. Driven by curiosity, I embrace
+                challenges as opportunities for growth, valuing resilience and adaptability. As a creative thinker, I enjoy
+                expressing myself through various mediums, be it writing, art, or problem-solving. Committed to fostering
+                meaningful connections, I believe in the power of empathy and collaboration. In essence, I'm on a continuous
+                journey of self-discovery and contribution to the world around me.
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="footerfirst">
+                    <ul>
+                        <li> Explore more at My Linked-In profile : <a id="typejs"
+                            href="https://www.linkedin.com/in/baani-baani-b1613224a/">https://www.linkedin.com/in/baani-baani-b1613224a/</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footersecond">
+                    Thanks for coming.<br>
+                    Good Day!
+                </div>
+            </div>
+            <div class="bottom">www.baanipersonalwebsite || all rights reserved</div>
+        </footer>
+        <!-- Inline js because animation was not working when in external js sheet -->
+        <!-- Source : https://github.com/mattboldt/typed.js -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['<i>I am going to be a  </i> Software developer.', '&amp;  a Web designer..'],
+                typeSpeed: 40,
+            });
+        </script>
+    </body>
+</html>
